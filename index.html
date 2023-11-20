@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Tokenizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="input-container">
+        <h1>Word Tokenizer</h1>
+        <label id="source-select-label" for="source-select">Select a source:</label>
+        <select id="source-select">
+            <option value="user-input">User Input</option>
+            <option value="wikipedia">Wikipedia Article</option>
+        </select>
+        <div id="input-section">
+            <input type="text" class="text-input" id="input-text" placeholder="Enter your own text">
+        </div>
+        <div id="wikipedia-section" style="display: none;">
+            <input type="text" id="wikipedia-topic" placeholder="Enter a Wikipedia topic">
+        </div>
+        <button class="regular-button" id="tokenize-button">Tokenize</button>
+    </div>
+    <div id="tokenized-words"></div>
+    <div class="csv-buttons">
+        <button class="csv-button" id="download-csv">Download as CSV</button>
+        <button class="csv-button" id="copy-csv">Copy as CSV</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
